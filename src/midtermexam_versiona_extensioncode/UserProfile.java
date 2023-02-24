@@ -15,7 +15,7 @@ package midtermexam_versiona_extensioncode;
  */
 public class UserProfile 
 {
-    
+   // my name is carter jeffery 
     private String name; //user name
     private String genre;// the user's preferred genre of movie
 
