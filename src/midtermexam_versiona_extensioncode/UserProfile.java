@@ -16,34 +16,28 @@ package midtermexam_versiona_extensioncode;
 public class UserProfile 
 {
     
-    private String userID;//the userID
+    private String name; //user name
     private String genre;// the user's preferred genre of movie
-    private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
-    
-    /**
-     * A constructor that takes in the userID and the favourite genre
-     * @param givenID the ID to assign to this user
-     * @param givenGenre the users favourite genre
-     */
-    public UserProfile(String givenID, String givenGenre)
+
+    public UserProfile(String name, String genre)
     {
-        userID = givenID;
-        genre= givenGenre;
+        this.name = name;
+        this.genre = genre;
     }
 
     /**
      * A getter for the userID
      * @return the userID
      */
-    public String getUserID() {
-        return userID;
+    public String getName() {
+        return name;
     }
 
     /**
      * @param userID the userID to set
      */
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
@@ -61,6 +55,9 @@ public class UserProfile
         this.genre = genre;
     }
     
+    public String toString(){
+        return "Name: " + name + ", Favourite Genre: " + genre;
+    }
     
     
     
